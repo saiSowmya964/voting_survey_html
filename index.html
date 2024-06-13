@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRPZxUYDaunVEpoNWaPGE-Lmo9tX13M7u62HZGKYqmQ&s">
+        <style>
+            body{
+                font-size:20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight:bold;
+                padding: 0;
+                margin: 0;
+            }
+            .h1{
+                color: rgb(23, 94, 142);
+            }
+            .div{
+                background-color:black;
+                color:white;
+                height:40px;
+            }
+            #logo{
+                font-size: 27px;
+                color:rgb(234, 202, 19);
+            }
+            a{
+                margin-right:100px;
+                margin-left: 10px;
+                color:white;
+                text-decoration: none;
+            }
+            .contentbox{
+                height:150px;
+                width:150px;
+                margin:20px;
+                display:inline-block;
+                border:solid;
+                border-radius:20px;
+                margin-left:100px;
+            }
+            #box1{
+                background-image:url("https://www.ysrcongress.com/sites/default/files/article_images/2013/12/19/fan.jpg");
+                background-size: 150px 150px;
+            }
+            #box2{
+                background-image:url("https://static.toiimg.com/thumb/msid-68065800,imgsize-28791,width-400,resizemode-4/68065800.jpg");
+                background-size: 150px 150px;
+            }
+            #box3{
+                background-image:url("https://static.langimg.com/photo/imgsize-335523,msid-82107082/telugu-samayam.jpg");
+                background-size:150px 150px;
+            }
+            #box4{
+                background-image:url("https://www.shutterstock.com/image-vector/bjp-symbol-bhartiya-janata-party-600nw-2377159373.jpg");
+                background-size:150px 150px;
+            }
+            .details{
+                text-align: center;
+                border: solid;
+                border-radius: 5px;
+                margin: 50px;
+                padding-bottom: 50px;
+                background-color: rgb(223, 234, 244);
+            }
+            .submit{
+                border-style:solid;
+                border-radius:10px;
+                padding:10px;
+                background-color: rgba(59, 170, 214, 0.5);
+            }
+            .reset{
+                border-style: solid;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .first{border-style:soild;
+                border-radius:10px;
+                padding: 5px;
+            }
+            marquee{
+                color: green;
+            }
+            .foot{
+                border: solid;
+                background-color: rgba(0, 0, 0,0.7);
+                width: 100%;
+                color: white;
+                text-align: center;
+                font-size: 15px;
+            }
+            #search{
+                margin-left: 200px;
+            }
+        </style>
+        <title>Survey form</title>
+    </head>
+    <body>
+        <header>
+        <div class="div">
+            <a id="logo" href="#" >AP.VOTE</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#contact">Help</a>
+            <a href="login.html">Logout</a>
+            <input placeholder="search in ap.vote" id="search">
+            <button>Search</button>
+        </div>
+        </header>
+        <div id="box">
+            <div class="contentbox";
+            id="box1";
+            style=background-color:white;></div>
+            <div class="contentbox";
+            id="box2";
+            style=background-color:white;></div>
+            <div class="contentbox";
+            id="box3";
+            style=background-color:white;></div>
+            <div class="contentbox";
+            id="box4";
+            style=background-color:white;></div>
+        </div>
+        <marquee bgcolor="white" height="30px" >Let’s all come forward to bring a positive change to the nation.</marquee>
+        <h1 align="center" class="h1" >Survey form for voting 2024.</h1>
+        <h3 align="right" class="h1">*Andhra pradesh.</h3>
+        <form action="thankyou.html" method="POST">
+        <div class="details">
+        <h6>*please fill correct details.</h6>
+        First Name: <input type="text" name="firstname" class="first" required autofocus autocomplete="off"><br><br>
+        Middle Name: <input type="text" name="middlename" class="first" required autofocus autocomplete="off"><br><br>
+        Last Name: <input type="text" name="lastname" class="first" required autofocus autocomplete="off"><br><br>
+        Father Name: <input type="text" name="fathername" class="first" required autofocus autocomplete="off"><br><br>
+        Mother Name: <input type="text" name="mothername" class="first" required autofocus autocomplete="off"><br><br>
+        <p>Gender:
+        <input type="radio" name="gender" required>Male
+        <input type="radio" name="gender" required>Female
+        <input type="radio" name="gender" required>Others<br><br>
+        </p>
+        Aadhar Number: <input type="text" name="aadharnumber" class="first" required autofocus autocomplete="off"><br><br>
+        Phone Number: <input type="text" name="phonenumber" class="first" required autofocus autocomplete="off"><br><br>
+        <p>Age:
+        <input type="radio" name="age" required>below 18
+        <input type="radio" name="age" required>above 18<br><br>
+        </p>
+        <p>Address:
+        <textarea rows="3"cols="40" name="address" class="first" required autofocus autocomplete="off">
+        </textarea><br><br>
+        </p>
+        City: <input type="text" name="city" class="first" required autofocus autocomplete="off"><br><br>
+        District: <input type="text" name="district" class="first" required autofocus autocomplete="off"><br><br>
+        State: <input type="text" name="state" class="first" required autofocus autocomplete="off"><br><br>
+        <input type="submit" name="button" value="Submit" class="submit">
+        <input type="reset" name="button" value="Reset" class="reset">
+        </div>
+        </form>
+        <footer>
+            <div class="foot" >
+                <p>Conditions of Use & Sale
+                    Privacy Notice
+                    Interest-Based Ads</p><br>
+                    <p id="contact">
+                        contact no: 123456789<br>
+                        <center>gmail: saisowmyamanchi@gmail.com</center>
+                    </p>
+                <p>&copy;sai sowmya manchi&hearts;</p>
+            </div>
+        </footer>
+    </body>
+</html>

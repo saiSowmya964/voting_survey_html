@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRPZxUYDaunVEpoNWaPGE-Lmo9tX13M7u62HZGKYqmQ&s">
+    <style>
+        .body{
+            font-size:23px;
+            font-family:"times new roman";
+            font-weight:bold;
+            text-align: center;
+            padding: 75px;
+            border: solid;
+            border-radius:10px;
+            margin: 20px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRPZxUYDaunVEpoNWaPGE-Lmo9tX13M7u62HZGKYqmQ&s");
+            background-repeat: no-repeat;
+            background-position: 420px;
+            background-size: 400px;
+            background-attachment: fixed; 
+            backdrop-filter: blur(2px);
+        }
+        #h1{
+            border: solid;
+            border-radius: 20px;
+            border-color: black;
+            background-color: rgba(99, 177, 99, 0.9);
+            margin-left: 200px;
+            margin-right: 200px;
+            padding: 5px;
+        }
+        #submit{
+            border-style:solid;
+            border-radius:10px;
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(99, 177, 99, 0.9);
+        }
+        #reset{
+            border-style:solid;
+            border-radius:10px;
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .first{border-style:soild;
+            border-radius:9px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 id="h1">LOGIN</h1>
+    <form action="index.html" method="post">
+    First Name: <input type="text" name="firstname" class="first" required autofocus autocomplete="off"><br><br>
+    Last Name: <input type="text" name="lastname" class="first" required autocomplete="off"><br><br>
+    Aadhar Number: <input type="text" name="aadharnumber" class="first" required autocomplete="off"><br><br>
+    <input type="checkbox" required>Remember me<br><br>
+    <input type="submit" name="submit" value="Login" id="submit">
+    <input type="reset" name="button" id="reset">
+    </form>
+</body>
+</html>
