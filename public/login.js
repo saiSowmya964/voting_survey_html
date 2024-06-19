@@ -39,15 +39,16 @@ app.post('/login',(req,res)=>{
         "LastName":lastname,
         "aadharnumber":aadharnumber,
         "Check-Box":check
-    }
+    };
+
     db.collection('login').insertOne(data,(err,collection)=>{
         if(err){throw err}
         else{console.log("Successfully inserted");
         // res.sendFile(path.join(__dirname+'/index.html'));
         res.redirect('/index.html');
     }
-    })
-})
+    });
+});
 app.post('/index',(req,res)=>{
     var firstname=req.body.firstname;
     var lastname=req.body.lastname;
@@ -84,8 +85,8 @@ app.post('/index',(req,res)=>{
         else{console.log("Successfully inserted");
         res.redirect('/thankyou.html');
     }
-    })
-})
+    });
+});
 app.post('/login.html', (req, res) => {
    res.redirect('/'); 
 });
