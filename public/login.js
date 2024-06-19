@@ -8,19 +8,25 @@ app.use(bodyParser.json())
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended:true
-}))
+}));
 
 mongoose.connect("mongodb://127.0.0.1:27017/project",{
     useNewUrlParser:true,
     useUnifiedTopology:true
-}).then(()=>{console.log("connected");})
-.catch((err)=>{console.log(err);})
+}).then(()=>{
+    console.log("connected");
+}).catch((err)=>{
+    console.log(err);
+});
 
 var db=mongoose.connection;
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname+'/login.html'));
 }).listen((4040),()=>{
     console.log("server runs on port 4040");
+})
+app.get('/login.html',(req, res)=>{
+    res.redirect('/')
 })
 app.get('/index.html',(req,res)=>{
     res.sendFile(path.join(__dirname+'/index.html'));
